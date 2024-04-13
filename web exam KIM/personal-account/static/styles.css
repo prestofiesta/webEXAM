@@ -1,0 +1,208 @@
+:root {
+    --c-red: #b6005e;
+    --c-beige: #F5F5DC;
+    --c-wheat: #cab761;
+    --c-bright-purple-crayola: #9E579D;
+    --c-wood-color: #4a0100;
+    --wheat-80: #f3d8a5;
+    --wheat-60: #e8b14a;
+}
+
+input[type=date] {
+    font-size: 15px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c-beige);
+}
+
+.alert-container {
+    width: 100%;
+    padding: 0 15px;
+    position: fixed;
+    z-index: 10000;
+    top: 20px;
+}
+
+.logo {
+    height: 120px;
+    width: 120px;
+}
+
+.icon-64 {
+    height: 64px;
+    width: 64px;
+}
+
+.header *,
+.hero,
+.list-of-walking-routes .pagination *,
+.advantages h2,
+.list-of-guides {
+    color: var(--wheat-80);
+}
+
+.header ul a:hover,
+.footer *:hover {
+    color: var(--wheat-60);
+}
+
+.header .navbar {
+    background-color: var(--c-red);
+}
+
+/* оформление всех списков в header */
+.header ul {
+    list-style: none;
+}
+
+/* оформление всех ссылок в header */
+.header a {
+    text-decoration: none;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* секция краткое описание проекта */
+.hero .container {
+    background-color: var(--c-red);
+    border-radius: 25px;
+    padding: 20px 20px;
+}
+
+/* размеры карусели изображений в кратком описании проекта */
+.hero .carousel-size {
+    width: 500px;
+}
+
+/* секция достоинство проекта */
+.advantages .container {
+    background-color: var(--c-red);
+    border-radius: 25px;
+    padding: 20px 20px;
+}
+
+/* достоинство */
+.advantages .advantages-item {
+    background-color: var(--c-bright-purple-crayola);
+    height: 100%;
+    border-radius: 25px;
+    padding: 20px 20px;
+}
+
+/* секция доступных пешеходных маршрутов */
+.list-of-walking-routes .container {
+    background-color: var(--c-wheat);
+    border-radius: 25px;
+    padding: 20px 20px;
+}
+
+.search-field {
+    width: 100%;
+}
+
+/* оформление таблицы доступных пешеходных маршрутов */
+.table-of-available-requests .row>* {
+    padding: 5px;
+}
+
+.table-of-available-requests .row .choose-btn {
+    height: 100%;
+    padding: 5px;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+.table-of-available-requests .row>*>* {
+    height: 100%;
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding: 10px;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+.table-of-available-requests .row .choose {
+    overflow: visible;
+}
+
+.list-of-walking-routes .search-field {
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+.pagination-bar .pagination {
+    gap: 5px;
+}
+
+.pagination-bar .pagination a {
+    height: 100%;
+    background-color: var(--gray);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.pagination-bar .pagination a.active {
+    background-color: var(--deep-yellow-green);
+}
+
+.pagination .page-link {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.pagination .active {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.footer {
+    background-color: var(--c-red);
+}
+
+.footer a {
+    color: var(--wheat-80);
+}
+
+/* общие стили */
+.white-square-with-rounded-edges {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+a.button {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: wheat;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+button.button {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: wheat;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+/* стили для модального окна */
+.modal-content {
+    background-color: var(--c-beige);
+}
+
+#editRequest .modal-body {
+    min-height: 300px;
+}
+
+#route-name {
+    min-height: 100px;
+}
